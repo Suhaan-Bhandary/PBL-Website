@@ -376,6 +376,9 @@ section#progress {
 /* responise ness */
 
 @media (max-width: 870px) {
+  #firstDiscussion {
+    display: none;
+  }
   header,
   header.sticky {
     z-index: 1000;
