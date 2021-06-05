@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Look Up</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Technologies</a></li>
+            <li><a href="#progress" onclick="toggleMenu();">Work Progress</a></li>
+
+        </ul>
+    </header>
+
+    <div class="slider">
+
+        <input type="radio" name="slider" value="" checked="checked">
+        <section class="banner" id="home">
+            <div class="textBx" data-0-top="opacity:0;left:100px" data-200-top="opacity:1;left:0px">
+                <h2 id="name_text">Hello,We are<br><span id="My_name">Kk wagh FE PBL Group.</span></h2>
+                <h3>We love Problem Solving.</h1>
+                    <a href="#about" class="btn">About</a>
+            </div>
+        </section>
+
+        <input type="radio" name="slider" value="">
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2>Life is a <span>Code</span></h2>
+                <h3>And we are the programmers.</h1>
+                    <a href="#progress" class="btn">Work</a>
+            </div>
+        </section>
+
+        <input type="radio" name="slider" value="">
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2 id="contact_this">Need to Contact us ?<br><span>Suhaan Bhandary.</span></h2>
+                <a href="https://www.linkedin.com/in/suhaan-bhandary-5bb907205/" class="btn" target="_blank">Contact Me</a>
+            </div>
+        </section>
+
+
+    </div>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About The Project</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Problem Statement :</h3>
+                <p>Do you ever feel lost in this cluster of assignments and links of Lectures on different platform ?
+                </p>
+                <p>And do you ever miss important information and due dates of assignments ?</p>
+                <p>Thus to solve this issue, we came up with a simple way to keep all information one touch away.</p>
+                <p>We are Intoducing LookUp,a simple and interactive website which will allow to share all assignments
+                    and important instructions from teachers to the students on any device.</p>
+            </div>
+            <div class="w50">
+                <h4>
+                    Features :
+                </h4>
+                <p>1.Latest links for attending Lectures of respective subjects.</p>
+                <p>2.Daily and weekly assignment details with their due dates.</p>
+                <p>3.Be updated with latest news in your college.</p>
+                <p>4.And many more to come...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2>Technologies used : </h2>
+            <p>Below are the technologies we will be using for this project.</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>React is the most popular front-end JavaScript library in the field of web development. It is used by large, established
+                companies and newly-minted startups alike (Netflix, Airbnb, Instagram, and the New York Times, to name a few). React
+                brings many advantages to the table, making it a better choice than other frameworks like Angular.js.</p>
+                <h3>Frontend<br><span>React - javascript</span></h3>
+            </div>
+            <div class="testimonialBx">
+                <p>Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by
+                experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app
+                without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great
+                documentation, and many options for free and paid-for support.</p>
+                <h3>Backend<br><span>Django - python</span></h3>
+            </div>
+            <div class="testimonialBx">
+                <p>SQLite is a relational database management system contained in a C library. In contrast to many other database
+                management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program.</p>
+                <h3>Database<br><span>Sqlite Database</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="progress" id="progress">
+        <div class="ourFirstStep">
+            <h2>Part 1 : Founded the problem</h2>
+            <p>
+                We found this problem among students that they we confused because of the bunch of links in their social media
+                platform
+                and the links we distributed among many groups and some links were sents only once and this was used for the
+                semester.
+            </p>
+            <p>
+                Other problem was that many students were having hard time keeping the due dates of daily and weekly assignments.
+            </p>
+            <br>
+            <p>We talked with teachers and students and took their oppinions,it took us some time and then we started gathering different solutions.</p>
+            <p>Out of the solutions we picked the best in terms of ease of using and time taken to implement it.</p>
+            <p>We gathered informations required to develop it.</p>
+        </div>
+
+        <div class="ourSecondStep">
+            <h2>Part 2 : Designing the Web Application</h2>
+            <p>Still working on it...</p>
+        </div>
+        
+    </section>
+
+    
+    <script type="text/javascript" src="script.js">
+    </script>
+</body>
+
+</html>
