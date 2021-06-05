@@ -365,7 +365,12 @@ section#progress {
 }
 
 #progress div {
-  padding: 40px 40px 0 40px;
+  padding: 40px;
+}
+
+.ourSecondStep img {
+  padding: 10px 0;
+  min-width: 100%;
 }
 
 /* responise ness */
@@ -540,7 +545,7 @@ section#progress {
 
   .testimonial .content .testimonialBx {
     margin: 10px 0;
-    padding: 40px 40px 20px 40px;
+    padding: 40px 10px 20px 10px;
     background: #2196f3;
   }
 
