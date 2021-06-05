@@ -374,13 +374,12 @@ section#progress {
   header,
   header.sticky {
     z-index: 1000;
-
     padding: 20px 50px;
   }
   .menu {
     position: fixed;
     z-index: 999;
-    top: 51px;
+    top: 70px;
     left: -100%;
 
     display: block;
@@ -424,15 +423,14 @@ section#progress {
     background-position: center;
     background-size: 25px;
   }
-  header.sticky .toggle.active,
-  header.sticky .toggle {
-    filter: invert(1);
+
+  section#progress {
+    padding: 0;
   }
 
   .menu {
     position: fixed;
     z-index: 999;
-    top: 51px;
     left: -100%;
 
     display: block;
@@ -492,13 +490,15 @@ section#progress {
     flex-wrap: wrap;
   }
   .testimonial .content .testimonialBx {
-    max-width: calc(100% - 40px);
+    max-width: 100%;
   }
   .content {
     display: flex;
 
     flex-wrap: wrap;
     justify-content: space-around;
+
+    overflow: scroll;
   }
   .formBx form {
     padding: 25px;
@@ -529,5 +529,31 @@ section#progress {
 
   section {
     padding: 100px 50px;
+  }
+
+  .testimonial .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .testimonial .content .testimonialBx {
+    margin: 10px 0;
+    padding: 40px 40px 20px 40px;
+    background: #2196f3;
+  }
+
+  .testimonial .heading {
+    padding-top: 0px;
+    height: 120px;
+  }
+
+  section {
+    padding: 10px 0px;
+  }
+  .w50 {
+    min-width: 50%;
+    padding: 10px 20px;
   }
 }
