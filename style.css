@@ -373,6 +373,11 @@ section#progress {
   min-width: 100%;
 }
 
+.photoContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* responise ness */
 
 @media (max-width: 870px) {
