@@ -9,3 +9,9 @@ function toggleMenu() {
   menuToggle.classList.toggle("active");
   menu.classList.toggle("active");
 }
+
+document
+  .querySelector(".indexOfProgress")
+  .addEventListener("click", function (e) {
+    document.querySelector(".indexOfProgress").classList.toggle("active");
+  });

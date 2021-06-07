@@ -387,9 +387,49 @@ section#progress {
   align-items: center;
   gap: 10px;
 }
+
+.progress div {
+  scroll-margin: 50px;
+}
+#progress .indexOfProgress {
+  width: 25%;
+  cursor: pointer;
+  border: 2px solid rgb(78, 75, 75);
+
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  margin: 20px 0px 0px 40px;
+}
+
+#progress .indexOfProgress.active {
+  height: auto;
+}
+
+.indexOfProgress h4 {
+  padding: 5px 0;
+  padding-left: 10px;
+}
+
+.indexOfProgress h4 i {
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  font-size: 40px;
+}
+
+.indexOfProgress a {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
 /* responise ness */
 
 @media (max-width: 870px) {
+  #progress .indexOfProgress {
+    width: 80%;
+  }
   #firstDiscussion {
     display: none;
   }
