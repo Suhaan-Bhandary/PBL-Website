@@ -501,7 +501,8 @@ section#progress {
     filter: invert(1);
   }
   img {
-    max-width: 0;
+    min-width: 100%;
+    max-width: 100%;
   }
   .contentBx.w50 {
     min-width: 100%;
