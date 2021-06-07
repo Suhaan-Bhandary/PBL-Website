@@ -378,6 +378,15 @@ section#progress {
   flex-wrap: wrap;
 }
 
+.photoContainer {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
 /* responise ness */
 
 @media (max-width: 870px) {
