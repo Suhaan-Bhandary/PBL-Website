@@ -371,6 +371,7 @@ section#progress {
 .ourSecondStep img {
   padding: 10px 0;
   min-width: 100%;
+  max-width: 100%;
 }
 
 .photoContainer {
@@ -424,9 +425,30 @@ section#progress {
   padding-left: 10px;
   padding-bottom: 10px;
 }
+
+.videoContainer {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 2px solid;
+}
+
+.videoContainer video {
+  width: 50%;
+}
 /* responise ness */
 
 @media (max-width: 870px) {
+  .videoContainer {
+    height: auto;
+  }
+  .videoContainer video {
+    width: 100%;
+  }
+
   #progress .indexOfProgress {
     width: 80%;
   }
