@@ -450,8 +450,13 @@ table {
 }
 
 /* Style table headers and table data */
+th:first-child,
+td:first-child {
+  width: 20px;
+}
 th,
 td {
+  width: 50%;
   text-align: left;
   padding: 10px;
 }
