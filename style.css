@@ -439,6 +439,32 @@ section#progress {
 .videoContainer video {
   width: 50%;
 }
+
+/* table */
+table {
+  margin: 20px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+/* Style table headers and table data */
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+
+/* Zebra-striped table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.axios-vs-fetch p {
+  padding: 5px;
+}
+
 /* responise ness */
 
 @media (max-width: 870px) {
@@ -640,5 +666,8 @@ section#progress {
   .w50 {
     min-width: 50%;
     padding: 10px 20px;
+  }
+  div#axios-vs-fetch {
+    padding: 10px;
   }
 }

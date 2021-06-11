@@ -23,7 +23,6 @@
             <li><a href="#about" onclick="toggleMenu();">About</a></li>
             <li><a href="#testimonial" onclick="toggleMenu();">Technologies</a></li>
             <li><a href="#progress" onclick="toggleMenu();">Work Progress</a></li>
-
         </ul>
     </header>
 
@@ -120,6 +119,7 @@
             <a href="#designedTheStart">4.Designed The Start</a>
             <a href="#designedTheLogin">5.Designed The Login</a>
             <a href="#FirstLook">5.First Look at the project</a>
+            <a href="#axios-vs-fetch">6.Axios vs Fetch</a>
         </div>
         <div class="ourFirstStep" id="ourFirstStep">
             <h2>Part 1 : Founded the problem</h2>
@@ -186,6 +186,92 @@
                 <source src="Videos\PBLFirstLook.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+
+        <div class="axios-vs-fetch" id="axios-vs-fetch">
+            <h2>Fetch v/s Axios</h2>
+            <p>
+                During the teacher login and student login process,we had to make a decision of fetching data from 
+                our django rest api and for fetching the data we had to use one of the tools to conect the database
+                with our application seemlessly.
+            </p>
+            <p>We were clear that we had to use a promise based request for this work as it is fast and also supports json
+                format which is mostly used in real world projects.
+            </p>
+            <p>In react we directly use fetch function which is a preinstalled library that come with js and supports
+                most modern browsers,we used fetch to connect to the client and made the login page.
+            </p>
+            <p>But something seem wrong with this approach and our code base was flooding with fetch requests.
+                After some research we found that axios is a good alternative for fetching data and it works similar to
+                the fetch but has a clear structure to work with,so we decided to go with Axios.
+            </p>
+            <p>Below are some key points about axios and fetch ,so that one can compare both of them : </p>
+            <table class="container">
+                <tbody>
+                    <tr>
+                        <th>Sr no.</th>
+                        <th>Axios</th>
+                        <th>Fetch</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Axios has <strong>url</strong> in request object.</td>
+                        <td>Fetch has <strong>no url</strong> in request object.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Axios is a <strong>stand-alone third party package</strong> that can be easily installed.</td>
+                        <td>Fetch is built into most modern browsers; <strong>no installation</strong> is required as such.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Axios enjoys built-in XSRF protection.</td>
+                        <td>Fetch does not.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Axios uses the <strong>data</strong> property.</td>
+                        <td>Fetch uses the <strong>body</strong> property.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Axios’ data contains the <strong>object</strong>.</td>
+                        <td>Fetch’s body has to be <strong>stringified</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Axios request is ok when <strong>status is 200</strong> and <strong>statusText is ‘OK’</strong>.</td>
+                        <td>Fetch request is ok when <strong>response object contains the ok property</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Axios performs <strong>automatic transforms of JSON data</strong>.</td>
+                        <td>Fetch is a <strong>two-step process</strong> when handling JSON data- first, to make the actual request;
+                            second, to call the .json() method on the response.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Axios allows <strong>cancelling request and request timeout</strong>.</td>
+                        <td>Fetch does not.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Axios has the ability to <strong>intercept HTTP requests</strong>.</td>
+                        <td>Fetch, by default, doesn’t provide a way to intercept requests.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Axios has <strong>built-in support for download progress</strong>.</td>
+                        <td>Fetch does not support upload progress.</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Axios has <strong>wide browser support</strong>.</td>
+                        <td>Fetch only supports Chrome 42+, Firefox 39+, Edge 14+, and Safari 10.1+ (This is known as Backward
+                            Compatibilty).</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         
     </section>
