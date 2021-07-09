@@ -113,14 +113,6 @@ header.sticky ul li a {
   line-height: 60px;
   margin: 0;
 }
-#My_name {
-  transition: 0.5s;
-
-  filter: blur(4px);
-}
-#My_name:hover {
-  filter: blur(0);
-}
 
 #life {
   filter: brightness(68%);
