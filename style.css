@@ -228,6 +228,14 @@ img {
   max-width: 100%;
 }
 
+.flow-chart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin: 75px;
+  flex-direction: column;
+}
+
 .services {
   background: #111;
 }
@@ -286,19 +294,19 @@ img {
   max-width: 100%;
 }
 
-.testimonial {
+.Technologies {
   background: #f7f7f7;
   scroll-margin: 75px;
   padding: 0 10px 10px 10px;
 }
 
-.testimonial .heading h2 {
+.Technologies .heading h2 {
   font-size: 30px;
   font-weight: 600;
   padding-top: 30px;
 }
 
-.testimonial .content {
+.Technologies .content {
   display: flex;
 
   justify-content: space-between;
@@ -307,20 +315,20 @@ img {
   overflow: hidden;
 }
 
-.testimonial .content .testimonialBx {
+.Technologies .content .TechnologiesBx {
   max-width: calc(35% - 40px);
   margin: 80px 0;
   padding: 40px 40px 20px 40px;
   background: #2196f3;
 }
 
-.testimonial .content .testimonialBx p {
+.Technologies .content .TechnologiesBx p {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
 }
 
-.testimonial .content .testimonialBx h3 {
+.Technologies .content .TechnologiesBx h3 {
   font-size: 20px;
   font-weight: 600;
 
@@ -332,7 +340,7 @@ img {
   margin-top: 10px;
 }
 
-.testimonial .content .testimonialBx span {
+.Technologies .content .TechnologiesBx span {
   font-size: 16px;
   font-weight: 400;
 }
@@ -592,12 +600,12 @@ tr:nth-child(even) {
   .contentBx.w50 {
     min-width: 100%;
   }
-  .testimonial .content {
+  .Technologies .content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .testimonial .content .testimonialBx {
+  .Technologies .content .TechnologiesBx {
     max-width: 100%;
   }
   .content {
@@ -639,20 +647,20 @@ tr:nth-child(even) {
     padding: 100px 50px;
   }
 
-  .testimonial .content {
+  .Technologies .content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     height: auto;
   }
 
-  .testimonial .content .testimonialBx {
+  .Technologies .content .TechnologiesBx {
     margin: 10px 0;
     padding: 40px 10px 20px 10px;
     background: #2196f3;
   }
 
-  .testimonial .heading {
+  .Technologies .heading {
     padding-top: 0px;
     height: 120px;
   }
