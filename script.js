@@ -15,3 +15,13 @@ document
   .addEventListener("click", function (e) {
     document.querySelector(".indexOfProgress").classList.toggle("active");
   });
+
+const banners = document.querySelectorAll(".banner-slider");
+let bannerIndex = 0;
+const highestIndex = banners.length - 1;
+
+setInterval(() => {
+  bannerIndex < highestIndex ? bannerIndex = bannerIndex + 1 : bannerIndex = 0;
+  let bannerRadioElement = banners[bannerIndex];
+  bannerRadioElement.checked = true;
+}, 6*1000);
